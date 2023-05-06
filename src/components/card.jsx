@@ -18,7 +18,7 @@ export const Card = ({ movie }) => {
 
     <div >
       <Link to='/summary'>
-        <button onClick={()=>{dispatch(currentMovie())}} className=" cursor-pointer text-white bg-slate-800 w-52 h-96 m-10 rounded-md hover:bg-yellow-500 hover:text-black active:bg-yellow-500 active:text-black">
+        <button onClick={()=>{dispatch(currentMovie(Movie))}} className=" cursor-pointer text-white bg-slate-800 w-52 h-96 m-10 rounded-md hover:bg-yellow-500 hover:text-black active:bg-yellow-500 active:text-black">
           <img className=" p-4 " src={movie.image?.medium != undefined ? movie.image.medium : "https://via.placeholder.com/360x480"} alt="" />
           <p className=" p-1 text-center">{movie['name']}</p>
           <p className=" text-center text-sm">{movie['language']}</p>
