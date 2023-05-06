@@ -1,6 +1,6 @@
 import {createSlice } from "@reduxjs/toolkit";
 
-const initialStateValue = {name:"",language:"",ganres:[],premiered:"",officialSite:"",rating:0,network:{},image:{},summary:""}
+const initialStateValue = {name:"",language:"",ganres:[],premiered:"",officialSite:"",rating:{},network:{},image:{},summary:""}
 export const movieInfoSlice = createSlice({
     name : "movieInfo",
     initialState :{value:initialStateValue},

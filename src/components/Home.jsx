@@ -35,7 +35,7 @@ return (
       <input onChange={(e) => { e.target.value!="" && setSearchName(e.target.value) }} placeholder="Search for movies..." className=" border-hidden rounded-md w-5/6 h-9 mx-3 p-3" type="text" />
       <button onClick={() => { searchMovies(searchName) }} className=" bg-slate-400 mx-3 hover:bg-slate-600 hover:text-white active:text-black  border-hidden rounded-md w-2/6">Search</button>
     </div>
-    <div className=" flex flex-wrap m-8">
+    <div className=" flex flex-wrap m-12">
       {
         movies?.map((item) => {
           return (
